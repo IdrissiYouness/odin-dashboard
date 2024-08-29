@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+}
+
+.dash-container{
+  display:grid;
+  height: 100dvh;
+  margin:5px;
+  grid-template-columns:1.5fr 5fr;
+  grid-template-rows:50px 1fr;
+  grid-template-areas:
+  'nav header'
+  'nav main';
+}
+
+
+nav{
+  grid-area:nav; 
+}
+
+main{
+  grid-area:main; 
+}
+
+header{
+  grid-area:header; 
+}
