@@ -7,7 +7,7 @@
   height: 100dvh;
   margin:5px;
   grid-template-columns:1.5fr 5fr;
-  grid-template-rows:50px 1fr;
+  grid-template-rows:100px 1fr;
   grid-template-areas:
   'nav header'
   'nav main';
@@ -22,6 +22,40 @@ main{
   grid-area:main; 
 }
 
+/* hearder style */
+
 header{
   grid-area:header; 
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  padding: 20px;
 }
+
+.up-header{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.prof-container{
+  display: flex;
+  flex-direction:row;
+  gap:20px;
+}
+
+.lower-header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.options-container{
+  display:flex;
+  flex-direction:row;
+  gap:15px;
+}
+
+
+
