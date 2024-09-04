@@ -78,18 +78,91 @@ main{
   grid-area:main;
   background-color: beige;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  gap:10px;
 }
 
 aside{
   display: grid;
-
+  grid-template-rows: 1fr 1fr;
 }
 
 .cards-container{
   display: grid;
-  grid-template-columns: (auto-fit, minmax(300px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
+
+.projects-container{
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  padding: 20px;
+}
+
+#projects-header{
+  align-self: center;
+}
+
+.cards-container>div{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: #5f4d80 solid;
+  padding: 10px;
+}
+
+.cards-container>div>div{
+   display: flex;
+   gap: 5px;
+   align-self: flex-end;
+   padding-top: 20px;
+   position: absolute;
+   bottom:20px;
+   right: 20px;
+}
+
+.intro-container>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+/* aside style */
+
+.announ-container,.trend-container{
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  padding: 35px 0 0 20px;
+}
+
+.announ-container>div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 20px;
+}
+
+.announ-container>div>div>p{
+  width: 75%;
+}
+
+
+.trend-container>div{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.trend-container>div>div{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+
+
 
 /* hearder style */
 
