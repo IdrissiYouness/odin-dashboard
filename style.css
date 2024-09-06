@@ -18,7 +18,7 @@
 /*navigation style*/
 nav{
   grid-area:nav;
-  background-color: antiquewhite;
+  background-color: #fbfafc;
   display: grid;
   grid-template-rows: 100px 2fr 1fr;
   padding-left: 10px;
@@ -37,7 +37,9 @@ nav{
 
 h1{
   font-size: 2rem;
+  color: #5f4d80;
 }
+
 
 
 
@@ -50,10 +52,14 @@ h1{
 
 .info-options>div>a,.help-options>div>a{
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.2rem;
   font-weight: bold;
   width: 100%;
+}
+
+.info-options>div>a:hover,.help-options>div>a:hover{
+  color: #5f4d80;
 }
 
 .info-options>div,.help-options>div{
@@ -68,6 +74,7 @@ h1{
   flex-direction: column;
   gap: 8px;
   padding-left: 15px;
+  padding-bottom: 20px;
 }
 
 
@@ -76,7 +83,7 @@ h1{
 
 main{
   grid-area:main;
-  background-color: beige;
+  background-color: #fbfafc;
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap:10px;
@@ -170,7 +177,7 @@ header{
   grid-area:header;
   display:grid;
   padding:0 30px 0 30px;
-  background-color: azure;
+  background-color: #fbfafc;
 }
 
 .up-header{
@@ -223,6 +230,10 @@ img[alt="profile_pic"]{
   border-radius: 50%;
 }
 
+img[alt="profile_pic"]:hover{
+  outline: solid #5f4d80;
+}
+
 
 button{
    cursor: pointer;
@@ -246,7 +257,7 @@ h4{
 
 input[type="text"]{
   width: 450px;
-  background-color: #efecf4;
+  background-color: #ddd7e7;
   border: 0;
   border-radius: 16px;
   padding-left: 8px;
